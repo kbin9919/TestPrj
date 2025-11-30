@@ -1,0 +1,6 @@
+﻿<queries>
+	<query id="GetEmp">
+		SELECT * FROM Emp WHERE id = @id
+	</query>
+	
+</queries>

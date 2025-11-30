@@ -1,0 +1,8 @@
+*.bin
+*.db
+XmlTest/.vs/XmlTest/FileContentIndex/
+XmlTest/XmlTest/bin/Debug/net8.0-windows/Microsoft.IdentityModel.Abstractions.dll
+XmlTest/XmlTest/bin/
+XmlTest/XmlTest/obj/
+XmlTest/.vs/XmlTest/v17/
+*.v2
