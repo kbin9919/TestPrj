@@ -15,7 +15,7 @@ namespace XmlTest.login
 
         public LoginDao() 
         {
-            this.mapper = new LoginMapper("");
+            this.mapper = new LoginMapper();
             this.sqlTemplate = new SqlTemplate();
         }
 

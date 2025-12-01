@@ -9,7 +9,7 @@ namespace XmlTest.login
 {
     public class LoginMapper : XmlMapper
     {
-        public LoginMapper(string xmlPath) : base(xmlPath) { }
+        public LoginMapper() : base() { }
 
         public string GetEmp()
         {

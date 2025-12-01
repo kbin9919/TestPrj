@@ -11,9 +11,25 @@ namespace XmlTest.utill
     {
         private readonly Dictionary<string, string> _queries = new Dictionary<string, string>();
 
-        public XmlMapper(string xmlFilePath)
+        public XmlMapper()
         {
+            string xmlFilePath = GetMapperXmlPath();
             Load(xmlFilePath);
+        }
+
+        protected string GetMapperXmlPath()
+        {
+            string mapperName = this.GetType().Name.Replace("Mapper", "");
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+
+            string xmlPath = Path.Combine(baseDir, mapperName, $"{mapperName}.xml");
+
+            if (!File.Exists(xmlPath))
+            {
+                // 예외 처리
+            }
+
+            return xmlPath;
         }
 
         private void Load(string xmlFilePath)
